@@ -76,9 +76,27 @@ switch (mode) {
 
 //Задание №5//
 
-function range (a, b) {
+/*function range (a, b) {
     for(let i = a; i <= b ; i++) {
         if (i % 5 === 0) {
+            console.log(i);
+        }
+     }
+}*/
+
+//Задание №6//
+
+function fizBuzz (a, b = 100) {
+    for(let i = a; i <= b ; i++) {
+        if (i % 3 === 0 || i % 5 === 0) {
+            if (i % 3 === 0 && i % 5 === 0){
+                console.log('Fizz Buzz');
+            } else if (i % 3 === 0) {
+                console.log('Fizz');
+            } else if (i % 5 === 0) {
+                console.log('Buzz');
+            }
+        } else {
             console.log(i);
         }
      }
