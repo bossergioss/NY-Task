@@ -43,7 +43,7 @@ alert('Объем цилиндра равен = ' + result);*/
 
 //Задание №4//
 
-const COURSE = 27.9514;
+/*const COURSE = 27.9514;
 
 function getUah (a) {
     return  COURSE * a;
@@ -72,7 +72,20 @@ switch (mode) {
     
     default :
         alert('Неверно выбран режим конвертации');
+}*/
+
+//Задание №5//
+
+function range (a, b) {
+    for(let i = a; i <= b ; i++) {
+        if (i % 5 === 0) {
+            console.log(i);
+        }
+     }
 }
+
+
+
 
 
 
