@@ -29,7 +29,7 @@ alert('Длина окружности = ' + result);*/
 
 //Задание №3//
 
-const heightcyl = Number(prompt('Введите высоту цилиндра'));
+/*const heightcyl = Number(prompt('Введите высоту цилиндра'));
 const basediam = Number(prompt('Введите диаметр основания'));
 
 function volume (a, b) {
@@ -39,4 +39,40 @@ function volume (a, b) {
 }
 
 const result = volume (heightcyl, basediam);
-alert('Объем цилиндра равен = ' + result);
+alert('Объем цилиндра равен = ' + result);*/
+
+//Задание №4//
+
+const COURSE = 27.9514;
+
+function getUah (a) {
+    return  COURSE * a;
+}
+
+function getUsd (b) {
+    return b / COURSE;
+}
+
+const mode = prompt('В какую валюту конвертировать? \n 1- UAH \n 2- USD');
+
+let count;
+
+switch (mode) {
+    case '1' :
+        const uah = Number(prompt('Введите количество USD для конвертации'));
+        count = getUah(uah);
+        alert('Вы получите ' + count + ' UAH');
+        break;
+
+    case '2' :
+        const usd = Number(prompt('Введите количество UAH для конвертации'));
+        count = getUsd(usd);
+        alert('Вы получите ' + count + ' USD');
+        break;
+    
+    default :
+        alert('Неверно выбран режим конвертации');
+}
+
+
+
